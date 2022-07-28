@@ -1,1 +1,0 @@
-// NOTE: jQuery juice = enabled;
