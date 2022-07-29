@@ -28,34 +28,62 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container table">
-      <div id="#nineAm" class="row">
-        <p class="hour time-block col-1">9AM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>
+    <div class="container" id="taskTable">
+
+      <div id="#nineAm" class="row time-block">
+        <div class="hour col-1-lg col-3-sm" id="09">9AM</div>
+        <input class="textarea col-10-lg col-6-sm"></input>
+        <button class="saveBtn col-1-lg col-3-sm"><i class="fas fa-save"></i></button>
       </div>
-      <div id="#tenAm" class="row">
-        <p class="col-1 hour">10AM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>  
+
+      <div id="#tenAm" class="row time-block">
+        <p class="hour col-1-lg col-3-sm" id="10">10AM</p>
+        <input class="textarea col-10-lg col-6-sm"></input>
+        <button class="saveBtn col-1-lg col-3-sm fas fa-save"></button>
       </div>
+
       <div id="#elevenAm" class="row">
-        <p class="col-1 hour">11AM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="11">11AM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>
       </div>
+
       <div id="#twelvePm" class="row">
-        <p class="col-1 hour">12PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="12">12PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>
       </div>
+
       <div id="#onePm" class="row">
-        <p class="col-1 hour">1PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="13">1PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>      
       </div>
+
       <div id="#twoPm" class="row">
-        <p class="col-1 hour">2PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="14">2PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>      
       </div>
+
       <div id="#threePm" class="row">
-        <p class="col-1 hour">3PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="15">3PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>      
       </div>
+
       <div id="#fourPm" class="row">
-        <p class="col-1 hour">4PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="16">4PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>      
       </div>
+
       <div id="#fivePm" class="row">
-        <p class="col-1 hour">5PM</p><div class="description textarea col-10">Description</div><div class="saveBtn col-1"></div>      
+        <p class="col-1 hour"id="17">5PM</p>
+        <input class="textarea col-10"></input>
+        <button class="saveBtn col-1 fas fa-save"></button>      
       </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

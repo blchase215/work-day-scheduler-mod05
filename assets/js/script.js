@@ -18,9 +18,49 @@
 // handle displaying the time
 timeDisplayEl = $('#currentDay');
 
-function displayTime() {
+timeBlocks = [
+    $('#09'),
+    $('#10'),
+    $('#11'),
+    $('#12'),
+    $('#13'),
+    $('#14'),
+    $('#15'),
+    $('#16'),
+    $('#17'),
+];
+
+console.log(timeBlocks[0]);
+console.log(timeBlocks[1]);
+console.log(timeBlocks[2]);
+console.log(timeBlocks[3]);
+console.log(timeBlocks[4]);
+console.log(timeBlocks[5]);
+console.log(timeBlocks[6]);
+console.log(timeBlocks[7]);
+console.log(timeBlocks[8]);
+
+
+
+function dayAndDate() {
     var rightNow = moment().format('dddd, MMMM Do');
     timeDisplayEl.text(rightNow);
-};
+}
 
-setInterval(displayTime, 1000);
+function timeChecker() {
+    var currentHour = moment().format('kk');
+    console.log(currentHour);
+    for (i=0; i < timeBlocks.length; i++) {
+        if (currentHour < timeBlocks[i]) {
+
+            
+        }
+    }
+}
+setInterval(dayAndDate, 1000);
+
+// var container = $('.container');
+// container.on('click', '.btn', function (event) {
+//     console.log(event.target);
+//     console.log($(event.target).siblings());
+// });
