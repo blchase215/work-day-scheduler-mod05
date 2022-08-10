@@ -1,4 +1,5 @@
 // NOTE: jQuery juice = enabled;
+// NOTE: bootstrap juice = enabled;
 // GIVEN I am using a daily planner to create a schedule
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
@@ -30,15 +31,20 @@ timeBlocks = [
     $('#17'),
 ];
 
-console.log(timeBlocks[0]);
-console.log(timeBlocks[1]);
-console.log(timeBlocks[2]);
-console.log(timeBlocks[3]);
-console.log(timeBlocks[4]);
-console.log(timeBlocks[5]);
-console.log(timeBlocks[6]);
-console.log(timeBlocks[7]);
-console.log(timeBlocks[8]);
+// test display element targets
+
+function displayTest(temp) {
+
+    console.log(timeBlocks[0]);
+    console.log(timeBlocks[1]);
+    console.log(timeBlocks[2]);
+    console.log(timeBlocks[3]);
+    console.log(timeBlocks[4]);
+    console.log(timeBlocks[5]);
+    console.log(timeBlocks[6]);
+    console.log(timeBlocks[7]);
+    console.log(timeBlocks[8]);
+}
 
 
 
@@ -57,7 +63,31 @@ function timeChecker() {
         }
     }
 }
+
 setInterval(dayAndDate, 1000);
+
+// Use localStorage.getItem(key) to read data in local storage.
+var task = localStorage.getItem('task');
+var saveBtn = function(el, ) {
+
+};
+
+// If this is the first time user has visited, then count will be null.
+if (task === null) {
+  task.textContent = "";
+}
+
+// render the retrieved count in HTML using the textContent property
+counter.textContent = count;
+
+addButton.addEventListener('click', function () {
+
+
+    // Use localStorage.setItem(key, value) to add/change the data in local
+    // storage
+    localStorage.setItem('count', task);
+  }
+);
 
 // var container = $('.container');
 // container.on('click', '.btn', function (event) {
